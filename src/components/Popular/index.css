@@ -1,0 +1,135 @@
+.popular-container {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  padding: 30px 50px 50px;
+}
+
+.popular-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 24px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movies-list li {
+  width: 100%;
+}
+
+.movies-list a {
+  display: block;
+  text-decoration: none;
+}
+
+.movies-list img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.movies-list img:hover {
+  transform: scale(1.04);
+}
+
+/* Loading */
+
+[data-testid='loader'] {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Failure */
+
+.popular-failure-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.popular-failure-container img {
+  width: 250px;
+  max-width: 80%;
+}
+
+.popular-failure-container p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.popular-failure-container button {
+  background-color: #ffffff;
+  color: #171717;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 992px) {
+  .popular-container {
+    padding: 25px 35px 40px;
+  }
+
+  .movies-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 18px;
+  }
+
+  .movies-list img {
+    height: 280px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .popular-container {
+    padding: 20px;
+  }
+
+  .popular-title {
+    font-size: 26px;
+  }
+
+  .movies-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 12px;
+  }
+
+  .movies-list img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movies-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+
+  .movies-list img {
+    height: 240px;
+  }
+}

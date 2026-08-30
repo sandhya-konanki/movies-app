@@ -1,0 +1,32 @@
+.movies-search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #383838;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 6px 10px;
+  width: 140px;
+}
+
+.search-icon-button {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #383838;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 220px;
+  }
+}

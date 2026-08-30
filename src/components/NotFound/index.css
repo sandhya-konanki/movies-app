@@ -1,0 +1,172 @@
+.not-found-container {
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Background Image */
+.not-found-container img {
+  width: 92%;
+  height: 470px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #168ff0;
+}
+
+/* Blue overlay */
+.not-found-container::after {
+  content: '';
+  position: absolute;
+  width: 92%;
+  height: 470px;
+  background-color: rgba(100, 125, 210, 0.48);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Heading */
+.not-found-container h1 {
+  position: absolute;
+  z-index: 2;
+  top: 220px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Description */
+.not-found-container p {
+  position: absolute;
+  z-index: 2;
+  top: 295px;
+  width: 450px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* Home link */
+.not-found-container a {
+  position: absolute;
+  z-index: 2;
+  top: 340px;
+  text-decoration: none;
+}
+
+/* Home button */
+.not-found-container button {
+  background-color: #ffffff;
+  color: #1f2937;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 18px;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.not-found-container button:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* ========================= */
+/*       MOBILE DEVICES      */
+/* ========================= */
+
+@media screen and (max-width: 767px) {
+  .not-found-container {
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .not-found-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .not-found-container::after {
+    width: 100%;
+    height: 500px;
+  }
+
+  .not-found-container h1 {
+    top: 210px;
+    width: 90%;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .not-found-container p {
+    top: 275px;
+    width: 80%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .not-found-container a {
+    top: 340px;
+  }
+
+  .not-found-container button {
+    padding: 9px 18px;
+    font-size: 11px;
+  }
+}
+
+
+/* ========================= */
+/*      SMALL PHONES         */
+/* ========================= */
+
+@media screen and (max-width: 480px) {
+  .not-found-container {
+    padding: 15px;
+  }
+
+  .not-found-container img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .not-found-container::after {
+    width: 100%;
+    height: 450px;
+  }
+
+  .not-found-container h1 {
+    top: 185px;
+    font-size: 28px;
+  }
+
+  .not-found-container p {
+    top: 245px;
+    width: 85%;
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .not-found-container a {
+    top: 315px;
+  }
+
+  .not-found-container button {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}

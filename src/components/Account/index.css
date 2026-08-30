@@ -1,0 +1,100 @@
+.account-container {
+  min-height: 318px;
+  padding: 30px 13%;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.account-container h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2933;
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Account details container */
+.account-container > div {
+  width: 100%;
+}
+
+/* All paragraphs */
+.account-container p {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+.account-container > div p:nth-child(odd) {
+  width: 75px;
+  color: #94a3b8;
+}
+
+/* Values */
+.account-container > div p:nth-child(even) {
+  width: calc(100% - 75px);
+  color: #475569;
+}
+
+/* Member ship row */
+.account-container > div p:nth-child(1),
+.account-container > div p:nth-child(2) {
+  padding-top: 8px;
+}
+
+/* Password row */
+.account-container > div p:nth-child(3),
+.account-container > div p:nth-child(4) {
+  padding-bottom: 8px;
+}
+
+/* Line after password */
+.account-container > div p:nth-child(4) {
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Plan details */
+.account-container > div p:nth-child(5),
+.account-container > div p:nth-child(6),
+.account-container > div p:nth-child(7) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Line after Plan details */
+.account-container > div p:nth-child(7) {
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Ultra HD small box */
+.account-container > div p:nth-child(7) {
+  width: auto;
+  margin-left: 8px;
+  padding: 0 3px;
+  border: 1px solid #64748b;
+  font-size: 8px;
+  line-height: 12px;
+  color: #334155;
+}
+
+/* Logout button */
+.account-container button {
+  display: block;
+  margin: 28px auto 0;
+  padding: 6px 12px;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.account-container button:hover {
+  background-color: #c40812;
+}

@@ -1,0 +1,151 @@
+.search-container {
+  background-color: #131313;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-content {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+}
+
+.search-movies-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.no-movies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.no-movies-image {
+  height: 176px;
+  width: 209px;
+}
+
+.no-movies-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  width: 100%;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 24px;
+  width: 100%;
+}
+
+.failure-view-image {
+  width: 200px;
+  margin-bottom: 16px;
+}
+
+.failure-view-text {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.retry-button {
+  background-color: #d81f26;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .search-content {
+    padding: 20px 60px;
+  }
+
+  .no-movies-image {
+    height: 378px;
+    width: 450px;
+  }
+
+  .no-movies-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .search-content {
+    padding: 20px 112px;
+  }
+}
+.search-container {
+  min-height: 100vh;
+  background-color: #181818;
+  padding: 100px 80px 40px;
+}
+
+.no-results-container {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-results-image {
+  width: 450px;
+  max-width: 80%;
+}
+
+.no-results-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader-container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-movies-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.search-movie-item {
+  list-style-type: none;
+}
+
+.search-movie-image {
+  width: 100%;
+  border-radius: 8px;
+}
